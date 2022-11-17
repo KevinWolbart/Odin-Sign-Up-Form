@@ -1,0 +1,146 @@
+@font-face {
+    font-family: fast-hand;
+    src: url(fast-hand-font/FastHand-lgBMV.ttf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 300;
+    font-family: fast-hand;
+    color: black;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+    font-family: fast-hand;
+    color: white;
+}
+
+a {
+    color: #FF6584;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.logo-section {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #FF6584;
+}
+
+.logo-section img {
+    width: 450px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: row;
+    margin-left: -40px;
+}
+
+.title-section img{
+    width: 100px;
+}
+
+.form-section {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    margin: -10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url(img/bartek-garbowicz-xJeCLqsBUqc-unsplash.jpg);
+    background-size: contain;
+}
+
+.form-section form {
+    padding: 20px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form-section form input {
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-section form input::placeholder {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.form-section form input:focus {
+    outline: none;
+    border-bottom: 1px solid #FF6584 !important;
+}
+
+.error {
+    border: 1px solid #FF6584 !important;
+}
+
+.form-pair {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.form-pair :first-child {
+    margin-right: 40px;
+}
+
+.form-section div p {
+    width: 600px;
+    font-size: 24px;
+    color: #E6E6E6;
+}
+
+.form-section form button {
+    width: 150px;
+    height: 30px;
+    background-color: #ff658400;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+
+.form-section form button:hover {
+    color: black;
+    background-color: #FF6584;
+    border-color: black;
+}
+.member {
+    color: #E6E6E6;
+}

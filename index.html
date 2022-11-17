@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Odin Form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="logo-section">
+                <div class="title-section">
+                    <img src="img/undraw_launch_day_4e04 (1).svg" alt="Astronaut">
+                    <h1 class="logo-header">Odin</h1>
+                </div>
+                <img src="img/undraw_maker_launch_re_rq81.svg" alt="Odin Logo">
+            
+        </div>
+        <div class="form-section">
+            <div>
+                <h2>Take Flight!</h2>
+                <p>Be among the first to take part in this exciting new adventure. The future awaits!</p>
+            </div>
+            
+            <form>
+                <div class="form-pair">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-pair">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" required>
+                </div>
+
+                <div class="form-pair">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+
+                    <input type="password" id="password-verification" name="password-verification" placeholder="Confirm Password" required>
+                </div>
+
+                <button type="submit" onclick="checkPassword()">Create Account</button>
+            </form>
+            <p class="member">Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
